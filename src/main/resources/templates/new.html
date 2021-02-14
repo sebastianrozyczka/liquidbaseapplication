@@ -32,6 +32,18 @@
                        th:field="*{birthDate}" required>
             </label>
         </div>
+        <div class="col-12" style="margin-bottom: 10px">
+            <label class="form-label" style="width: inherit;">Email Address
+                <input type="email" class="form-control" id="emailAddress" th:field="*{emailAddress}" required>
+            </label>
+        </div>
+        <div class="col-12" style="margin-bottom: 10px">
+            <label class="form-label" style="width: inherit;">Newsletter subscription
+                <select class="form-select" aria-label="Default select example" th:field="*{subscribesNewsletter}">
+                    <option th:value="false">No active</option>
+                    <option th:value="true">Active</option>
+                </select>
+            </label>
         <div class="col-12" style="margin-top: 15px; text-align: right">
             <button class="btn btn-primary" type="submit" style="background-color: #acc6aa; border: none; color: black">
                 Create

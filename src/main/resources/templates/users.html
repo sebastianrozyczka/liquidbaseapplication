@@ -29,6 +29,8 @@
         <th scope="col">First Name</th>
         <th scope="col">Last Name</th>
         <th scope="col">Birth Date</th>
+        <th scope="col">Email Address</th>
+        <th scope="col">Newsletter Subscription</th>
     </tr>
     </thead>
     <tbody>
@@ -37,6 +39,8 @@
         <td th:text="${user.firstName}"></td>
         <td th:text="${user.lastName}"></td>
         <td th:text="${user.birthDate}"></td>
+        <td th:text="${user.emailAddress}"></td>
+        <td th:text="${user.subscribesNewsletter} != false ? 'Active' : 'No active'"></td>
     </tr>
     </tbody>
 </table>

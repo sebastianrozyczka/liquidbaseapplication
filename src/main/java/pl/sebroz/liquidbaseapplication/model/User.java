@@ -25,4 +25,10 @@ public class User {
     @Column(name = "birth_date")
     @DateTimeFormat(pattern = "yyyy-MM-dd")
     private LocalDate birthDate;
+
+    @Column(name = "email_address")
+    private String emailAddress;
+
+    @Column(name = "subscribes_newsletter")
+    private boolean subscribesNewsletter;
 }
